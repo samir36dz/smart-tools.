@@ -1,7 +1,7 @@
 {
   "appId": "com.smarttools.global",
   "appName": "Smart Tools",
-  "webDir": ".",
+  "webDir": "www",
   "server": {
     "androidScheme": "https"
   }
