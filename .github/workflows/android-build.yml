@@ -30,10 +30,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate Android project
+          - name: Generate Android project
         run: |
           if [ ! -d android ]; then
-            npx cap add android
+            npx cap add android || {
+              mkdir -p android/app/src/main/assets
+              echo '[]' > android/app/src/main/assets/capacitor.plugins.json
+              npx cap sync android
+            }
           fi
 
       - name: Sync Android
