@@ -1,0 +1,1 @@
+Smart Tools 2.0: multilingual web app/PWA project with QR scanner, live currency converter, data calculator, and AI chat UI plus secure Node.js backend scaffold. See START-HERE-AR.txt. Not an Android APK/AAB; AdMob not yet integrated.

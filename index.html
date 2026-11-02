@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080e19"><title>Smart Tools</title><link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.webmanifest"></head><body><div class="app">
+<header><div class="brand"><span>✦</span><div><b>SMART TOOLS</b><small>ALL YOUR TOOLS. ONE SMART APP.</small></div></div>
+<select id="language" aria-label="Language"><option value="en">English</option><option value="ar">العربية</option><option value="fr">Français</option><option value="zh">中文</option><option value="ja">日本語</option><option value="ru">Русский</option><option value="uk">Українська</option></select></header>
+<section class="hero"><small data-i18n="welcome"></small><h1 data-i18n="headline"></h1><p data-i18n="subhead"></p></section>
+<div class="section"><small data-i18n="toolbox"></small><h2 data-i18n="discover"></h2></div>
+<section class="grid">
+<button data-tool="calculator"><i>＋</i><b data-i18n="calculator"></b><small data-i18n="calculatorDesc"></small></button>
+<button data-tool="percent"><i>％</i><b data-i18n="percent"></b><small data-i18n="percentDesc"></small></button>
+<button data-tool="age"><i>◷</i><b data-i18n="age"></b><small data-i18n="ageDesc"></small></button>
+<button data-tool="convert"><i>⇄</i><b data-i18n="convert"></b><small data-i18n="convertDesc"></small></button>
+<button data-tool="password"><i>⌑</i><b data-i18n="password"></b><small data-i18n="passwordDesc"></small></button>
+<button data-tool="notes"><i>▤</i><b data-i18n="notes"></b><small data-i18n="notesDesc"></small></button>
+<button data-tool="qr"><i>▦</i><b data-i18n="qr"></b><small data-i18n="qrDesc"></small></button>
+<button data-tool="currency"><i>＄</i><b data-i18n="currency"></b><small data-i18n="currencyDesc"></small></button>
+<button data-tool="data"><i>◉</i><b data-i18n="data"></b><small data-i18n="dataDesc"></small></button>
+<button data-tool="ai"><i>✦</i><b data-i18n="ai"></b><small data-i18n="aiDesc"></small></button>
+</section><aside><b data-i18n="tipTitle"></b><p data-i18n="tipText"></p></aside><footer>SMART TOOLS · VERSION 2.0</footer></div>
+<div id="modal" hidden><section class="dialog"><button id="close" class="close">×</button><h2 id="toolTitle"></h2><div id="toolBody"></div></section></div>
+<script src="app.js"></script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js").catch(()=>{});}</script></body></html>
